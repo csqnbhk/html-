@@ -1,0 +1,97 @@
+<!--
+   author:群众
+   time:2018/11/20
+   function:index的主要基本框架
+-->
+<html>
+<head>
+<title>下载页测试</title>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script type="text/javascript" language="javascript" src="index.js" charset="utf-8"></script>
+</head>
+<body>
+      <!--  box整体部分  -->
+      <div class="box">
+	       <!--   header部分   -->
+	       <div class="header">		   
+		         <div class="logo"> </div>
+				  <div class="search">
+					<form name="serach_game" action="search_game.php" method="GET">
+					<input class="sinput" name="game"   type="text" value="">
+					<input class="sbtn"   name="submit" type="submit" value="查找游戏">
+					</form>
+				  </div>
+				  
+				 <!--
+				 <div class="nav"> 
+                    <ul id="menu">				 
+					<li><a href="#"     target="_blank"   data-id="note" title="策略">策略</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="动作">动作</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="独立">独立</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="竞速">竞速</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="冒险">冒险</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="模拟">模拟</a></li>
+					<li><a href="#"     target="_blank"   data_id="note" title="体育">体育</a></li>
+					<li><a href="#"     target="_blank"   data_id="note" title="休闲">休闲</a></li>
+					<li><a href="#"     target="_blank"   data-id="note" title="角色扮演">角色扮演</a></li>
+					<li><a href="#"     target="_blank"   data_id="note" title="大型多人在线">大型多人在线</a></li>
+					</ul>
+				 </div>	
+-->
+                 <!--导航-->
+				<div class="nav">
+				   <ul id="menu">
+					<li><a href="#">策略</a></li>
+					<li><a href="#">动作</a></li>
+					<li><a href="#">独立</a></li>
+					<li><a href="#">竞速</a></li>
+					<li><a href="#">冒险</a><li>
+					<li><a href="#">模拟</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">休闲</a></li>
+					<li><a href="#">角色</a></li>
+					<li><a href="#">大型</a></li>
+				   </ul>
+                </div>						
+		   </div>
+		   <!--   main部分   -->
+		   <div class="main">	
+			    <div id="news" align="center"> 
+				    <?php
+						#显示news区图片
+						$path="news/";
+						$num=8;
+						for($i=1;$i<=$num;$i++)
+						{
+							$pathfile=$path.$i.".jpg";
+							#echo $pathfile."<br>";
+							echo "<img src='$pathfile'  width='60%' height='96%'>";
+						}	
+					?>
+				</div>
+				<!-- 游戏展示区 -->
+				<div  class="content">				
+				       <div class="game_types" id="game_types">
+                       <hr>				
+				       <h3>热门游戏推荐</h3>					   
+					   <?php
+						 include("show_game.php");
+						
+					   ?>
+					   </div>
+					   <input type="button" align="center"  id="show_hide" style="color:green;" value="查看更多游戏" onclick=showGames()>
+					   <br>
+					   <br>
+					   <!--  更多加载 -->
+					   <div  id="more_games"></div>
+					   
+				</div>
+		     </div>
+		   <!--   footer部分   --->
+		   <div class="footer">		   
+				<p>关于我们 |  用户反馈  |  作者:xxxx</p>
+		   </div>		   
+	  </div>	 
+</body>
+</html>

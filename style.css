@@ -1,0 +1,182 @@
+/*
+  author:群众
+  time:2018/11/20
+  function:设置index.html页面样式
+
+*/
+/*主要div的样式设置*/
+@charset "utf-8";
+/*  header头部  */
+.box{
+	background:#D9D9D9;
+}
+.header{
+    width:100%;
+	height:20%;
+	text-align:center;
+	#background:#FFF8DC;
+	background:	#D9D9D9;
+	
+}
+
+.logo{
+	
+}
+/*
+.search{width:100%; height:30%; float:left; border:3px;}*/
+.search{height:30%}
+.sinput{color:#737272;  background:white; border:1px solid #787575; border-radius:3px 0 0 3px;}
+.sbtn{border-radius:0px 3px 3px 0px; border:1px solid #787575; background-color:#4c4b4b; font-size:13px; color:#f3f7fc;}
+
+
+.nav{
+	height:60%;
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	#padding:20px;
+	#margin:20px;
+	}
+#menu
+{ 
+  
+	width: 100%;
+	text-align:center;
+		
+}
+	
+ #menu ul{
+	position:center;
+	text-align:center;	 
+ }
+ #menu li
+ {		
+	list-style: none;
+	display: inline-block;
+	width: 10%;
+	line-height:50px;
+}	
+.nav a{
+	display:block;
+	float:left;
+	width:100%;
+	text-decoration:none;
+	margin:2px;
+	}
+	
+.nav a:link,.nav a:visited{
+	color:#25110a;
+	background-color::#b88751;
+	border-top:#cccccc 1px solid;
+	border-left:#cccccc 1px solid;
+	border-right:#0d0503 1px solid;
+	border-bottom:#0d0503 1px solid;
+	}
+	
+.nav a:hover{
+	color:#fff;
+
+	background-color:#434343;
+	border-top:#0d0503 1px solid;
+	border-left:#0d0503 1px solid;
+	border-right:#cccccc 1px solid;
+	border-bottom:#cccccc 1px solid;}
+
+/*  main主体部分  */
+.main{
+	
+	position: relative;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	background:	#D9D9D9;
+}
+
+#news{
+	position: relative;
+	width:100%;
+	height:40%;
+	margin:0 auto;
+	#background:#FFF8DC;
+	background:	#D9D9D9;
+	
+}
+#news>img:not(:first-child){ display:none; }
+
+.content{
+	position: relative;	
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	background:	#D9D9D9;
+	text-align:center;
+}
+.game_types{
+
+  border-left:1px #ccc solid;
+  border-right:1px #ccc solid;
+  border-bottom:1px #cc solid;
+  border-top:1px #cc solid;
+  
+	
+}
+/*  footer页尾  */
+.footer{ text-align:center;background-color:#434343; padding:20px; font-size:14px; color:white;}
+
+#menu { 
+		position: relative;
+        font:12px verdana, 
+		arial, sans-serif; /* 设置文字大小和字体样式 */
+        width: 100%;
+		height:40%;
+	
+		
+		
+    }
+	
+ #menu ul{
+	position: relative;
+	background-color: gray;
+	width:100%;
+	height:100%;
+ }
+ #menu li {
+	
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	width: 8%;
+	line-height:50px;
+}
+h3{
+	text-align:center;
+	
+}
+
+img
+{
+	margin:10px;
+}
+
+/*下载按钮设置*/
+
+a {color: #696B83;TEXT-DECORATION: none}
+a:active {background: #AFC1DC}
+.DownButtonNormal{
+    height: 18px;
+    line-height: 18px;
+    padding: 0 11px;
+    background: rgb(120, 127, 162);
+    border: 1px #E5E7EA solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 12px;
+    outline: none;
+ }
+
+
+
+
+
+
+
